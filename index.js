@@ -1,22 +1,32 @@
 const express = require("express");
 
-es6Renderer = require("express-es6-template-engine");
+const es6Renderer = require("express-es6-template-engine");
 
-app = express();
+const app = express();
 
 app.engine("html", es6Renderer);
 app.set("view engine", "html");
-app.get("/", (req, res) => {
-  res.render("home", {
-    locals: { header1: "RPG's" },
-    partials: { title: "RPG's vs FPS" },
+
+app.get("/rpg", (req, res) => {
+  res.render("main", {
+    locals: { header1: "RPG's", title: "RPG's vs FPS" },
+    partials: {
+      main: "rpg",
+    },
   });
 });
-// app.get("/", (req, res) => {
-//   res.render("linkedPage", {
-//     locals: { header2: "FPS" },
-//     partials: { title: "RPG's VS FPS" },
-//   });
-// });
-app.listen(3000);
-console.log();
+
+app.get("/fps", (req, res) => {
+  res.render("main", {
+    locals: { header2: "FPS", title: "RPG's vs FPS" },
+    partials: { main: "fps" },
+  });
+});
+
+app.get("*", (req, res) => {
+  res.redirect("/rpg");
+});
+
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
