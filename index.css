@@ -1,26 +1,26 @@
-body {
-  background-color: black;
-  color: white;
-  display: block;
-  text-align: center;
-}
+/* body { */
+/*   background-color: black; */
+/*   color: white; */
+/*   display: block; */
+/*   text-align: center; */
+/* } */
 
-.Content-1,
-.Content-2 {
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
+/* .Content-1, */
+/* .Content-2 { */
+/*   margin-left: 10vw; */
+/*   margin-right: 10vw; */
+/* } */
 
-.submit {
-  font-size: 20px;
-  margin-top: 10px;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: gray;
-  color: white;
-  transition: 0.35s;
-}
-.submit:hover {
-  background-color: white;
-  color: gray;
-}
+/* .submit { */
+/*   font-size: 20px; */
+/*   margin-top: 10px; */
+/*   padding: 5px; */
+/*   border-radius: 5px; */
+/*   background-color: gray; */
+/*   color: white; */
+/*   transition: 0.35s; */
+/* } */
+/* .submit:hover { */
+/*   background-color: white; */
+/*   color: gray; */
+/* } */

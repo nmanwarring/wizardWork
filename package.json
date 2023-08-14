@@ -1,0 +1,18 @@
+{
+  "name": "wizardwork",
+  "version": "1.0.0",
+  "description": "1. Website should have at least 2 pages that link to each other (from each page you should be able to navigate back to the home page) 2. Website should use express & express middleware. Try to incorporate the morgan logger from the pre reading. 3. Website should use templates with locals and partials 4. Website should look nice. Use bootstrap styles or something similar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
